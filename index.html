@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="./icons/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLP Colour Tool</title>
+    <script src="UPNG.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1 id="myHeader">MLP Colour Counter</h1>
+    </header>
+    <main>
+        <section id="upload_containter">
+            <div>
+            <input name="img_loader" type="file" id="img_loader" accept="image/png, image/jpeg, image/tiff"/>
+            </div>
+        </section>
+        <section>
+            <canvas id="image_canvas"></canvas> 
+        </section>
+        <hr>
+        <section id="colour-count-container" class="colour-count-container invisible">
+            <h2>Pixel Colours</h2>                
+            <h4><span id="colour-count"></span> unique colours</h4>
+            <div id="colours-container" class="colours-container">
+            </div>
+        </section> 
+
+    </main>
+    <script src="counter.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
